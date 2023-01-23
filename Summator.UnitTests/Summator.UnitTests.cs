@@ -84,6 +84,22 @@ namespace Summator.UnitTests
             var expected = -1.5;
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Test_Summator_AverageTwoPositiveNumbers()
+        {
+            var nums = new int[] { 5 , 5 };
+            var actual = Summator.Average(nums);
+            var expected = 5;
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void Test_Summator_AverageTwoNegativeNumbers()
+        {
+            var nums = new int[] { -2, -4 };
+            var actual = Summator.Average(nums);
+            var expected = -3;
+            Assert.AreEqual(expected, actual);
+        }
       }
     }
 
